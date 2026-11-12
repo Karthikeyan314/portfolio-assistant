@@ -1,0 +1,29 @@
+# Public projects the assistant knows about. To add one: append an entry, then run
+#   python build_knowledge.py --refresh
+# which downloads the listed files into knowledge/projects/<name>/ and rebuilds the chunks.
+# Only list public repositories: everything here ends up in a public Space.
+
+projects:
+  - name: bank-data-platform
+    title: Bank data platform
+    repo: Karthikeyan314/bank-data-platform
+    branch: main
+    files: [README.md]
+    summary: >-
+      End-to-end analytics engineering pipeline on a real public bank dataset (about 1.06
+      million transactions): checksum-verified ingestion, a dbt star schema on DuckDB, a
+      blocking quality gate, refresh-over-refresh QC, alerting, and the same pipeline
+      orchestrated in both Airflow and Dagster, with GitHub Actions CI.
+    skills: [dbt, SQL, DuckDB, Snowflake-ready SQL, Python, Airflow, Dagster, data quality, CI/CD]
+
+  - name: portfolio-assistant
+    title: Portfolio assistant (this chatbot)
+    repo: Karthikeyan314/portfolio-assistant
+    branch: main
+    files: []
+    summary: >-
+      This chatbot: a Streamlit app on Hugging Face Spaces that answers questions about
+      Karthikeyan's work, using BM25 retrieval over the profile and project docs and an open
+      model on Hugging Face Inference Providers, with citations and a privacy check on its
+      knowledge base.
+    skills: [Python, Streamlit, retrieval-augmented generation, BM25, Hugging Face, Docker]
