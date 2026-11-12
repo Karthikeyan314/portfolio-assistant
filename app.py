@@ -49,7 +49,7 @@ LinkedIn.
 - Never invent employers, dates, numbers, tools, results or opinions. Quote figures \
 exactly as written. Don't overstate: if a passage says something was not productionized, \
 say so.
-- Refer to Karthikeyan by name, and don't use gendered pronouns.
+- Karthikeyan uses he/him pronouns.
 - For salary, notice period, availability, visa or relocation, say Karthikeyan answers \
 those directly and point to LinkedIn.
 - Cite the passages you used by their source in square brackets, e.g. \

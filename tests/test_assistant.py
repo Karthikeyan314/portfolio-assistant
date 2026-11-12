@@ -61,7 +61,7 @@ def test_prompt_carries_rules_context_and_trimmed_history(index):
     msgs = app.build_messages("What is Scout?", hits, history)
     system = msgs[0]["content"]
     assert msgs[0]["role"] == "system" and "Answer only from the CONTEXT" in system
-    assert "gendered pronouns" in system and "salary" in system
+    assert "he/him" in system and "salary" in system
     assert "CONTEXT:" in msgs[-1]["content"] and "What is Scout?" in msgs[-1]["content"]
     assert len(msgs) == 1 + 2 * app.MAX_HISTORY_TURNS + 1
 

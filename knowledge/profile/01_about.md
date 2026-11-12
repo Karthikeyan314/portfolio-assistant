@@ -2,13 +2,13 @@
 
 ## Who Karthikeyan is
 
-Karthikeyan Nagaraju is an analytics engineer based in Bangalore, India. Karthikeyan is a Data Analytics Engineer at Autodesk (since February 2025), working on customer success, product adoption, support and renewals analytics. Before that, Karthikeyan spent almost three years at ExxonMobil as a Business Analyst and then a Product Analyst, working on sales, supply-chain and customer-experience reporting.
+Karthikeyan Nagaraju (he/him) is an analytics engineer based in Bangalore, India. He is a Data Analytics Engineer at Autodesk (since February 2025), working on customer success, product adoption, support and renewals analytics. Before that, he spent almost three years at ExxonMobil as a Business Analyst and then a Product Analyst, working on sales, supply-chain and customer-experience reporting.
 
 Karthikeyan has worked in analytics since May 2022. Before that, starting in 2021, Karthikeyan worked in educational content curation and in trust-and-safety review of job postings.
 
 ## Professional summary
 
-Analytics engineer with experience across customer success, sales, supply chain and customer experience. Develops Snowflake data models, SQL and Python workflows, and Power BI and Tableau reporting. Combines historical data modeling, reporting automation, data validation and stakeholder delivery with practical experience building conversational analytics and evaluating churn models.
+Analytics engineer with experience across customer success, sales, supply chain and customer experience. He develops Snowflake data models, SQL and Python workflows, and Power BI and Tableau reporting. He combines historical data modeling, reporting automation, data validation and stakeholder delivery with practical experience building conversational analytics and evaluating churn models.
 
 ## What Karthikeyan is known for
 
