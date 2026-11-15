@@ -1,21 +1,10 @@
----
-title: Ask about Karthikeyan's work
-emoji: 💬
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
-pinned: false
-short_description: Chat with an analytics engineer's portfolio
----
-
 # Portfolio assistant
 
 A chatbot that answers questions about my work as an analytics engineer: experience, projects, skills, how I approach data quality, and the AI and machine learning work I've done. It's meant for recruiters, hiring managers and engineers who want to understand a body of work by talking to it instead of reading a CV.
 
 Every answer comes only from my published profile and the docs of my public GitHub projects, and cites the passages it used.
 
-**Live:** https://huggingface.co/spaces/butterfingers1403/portfolio-assistant
+**Live:** https://karthikeyan-portfolio.streamlit.app
 **Projects it knows about:** [bank-data-platform](https://github.com/Karthikeyan314/bank-data-platform) and this repository.
 
 ## How it works
@@ -33,7 +22,7 @@ Every answer comes only from my published profile and the docs of my public GitH
 
 ## Privacy by construction
 
-The Space is public, so the build refuses to write the knowledge base if any passage contains a phone number, an email address or an internal marker (for example "confidential"). A test runs the same check in CI. The profile is written from employer-facing material only: no internal documents, employer data, customer names or confidential figures.
+The app is public, so the build refuses to write the knowledge base if any passage contains a phone number, an email address or an internal marker (for example "confidential"). A test runs the same check in CI. The profile is written from employer-facing material only: no internal documents, employer data, customer names or confidential figures.
 
 ## Add a project
 
@@ -55,19 +44,19 @@ streamlit run app.py
 
 Set `HF_TOKEN` to a Hugging Face token with Inference Providers access to get generated answers. Without it, the app runs in passages-only mode.
 
-## Deploy to Hugging Face Spaces
+## Deploy
 
-This repository is the Space. The front matter at the top of this README configures it as a Docker Space on port 7860.
+The live app runs on Streamlit Community Cloud straight from this repository's `main` branch (main file `app.py`), so every push redeploys it.
 
-1. Sign in once: `hf auth login`.
-2. Create the Space and upload:
+To turn on generated answers, add a secret in the app's settings:
 
-   ```bash
-   hf repo create butterfingers1403/portfolio-assistant --repo-type space --space-sdk docker
-   hf upload butterfingers1403/portfolio-assistant . . --repo-type space --exclude ".git/*" ".github/*" "tests/*" ".venv/*"
-   ```
+```toml
+HF_TOKEN = "hf_..."
+```
 
-3. In the Space settings, add a secret `HF_TOKEN` (a fine-grained token with "Make calls to Inference Providers") so answers are generated.
+Use a fine-grained Hugging Face token with "Make calls to Inference Providers". Streamlit exposes top-level secrets as environment variables, which is where the app reads it.
+
+The `Dockerfile` runs the same app on any container host (port 7860).
 
 ## Layout
 
@@ -79,5 +68,5 @@ knowledge/profile/      professional profile
 knowledge/projects.yaml public projects to learn from
 knowledge/projects/     snapshots of those projects' docs
 tests/                  retrieval, prompt, privacy and freshness tests
-Dockerfile              the Space image
+Dockerfile              container image for self-hosting
 ```

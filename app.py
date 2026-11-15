@@ -8,7 +8,7 @@ Without an HF_TOKEN the app still works: it shows the retrieved passages instead
     streamlit run app.py
 
 Environment:
-    HF_TOKEN     Hugging Face token (a Space secret); enables generated answers
+    HF_TOKEN     Hugging Face token (an app secret); enables generated answers
     HF_MODEL     model id, default openai/gpt-oss-120b
 """
 

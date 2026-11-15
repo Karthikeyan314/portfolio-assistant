@@ -10,7 +10,7 @@ Sources:
 
 Every chunk records a source label and a link, so answers can cite them. The build fails
 if any chunk looks like private data (phone numbers, email addresses, internal markers),
-because the knowledge base is published with a public Space.
+because the knowledge base is published in a public app.
 """
 
 from __future__ import annotations

@@ -10,7 +10,7 @@ The data is the PKDD'99 Czech bank dataset: 4,500 accounts, 5,369 clients, 682 l
 | **dbt project** | 19 models, 121 data tests, 2 unit tests, 3 seeds, 8 sources, 1 exposure, 2 enforced contracts |
 | **Quality** | 8 gate checks (block or alert), refresh-over-refresh QC, 7 Python tests, including one that proves incremental builds equal a full rebuild |
 | **Runs** | `make run` for one build, `make replay` for twelve simulated monthly refreshes |
-| **Assistant** | Ask questions about this project and the rest of my work in the [portfolio assistant](https://huggingface.co/spaces/butterfingers1403/portfolio-assistant) ([code](https://github.com/Karthikeyan314/portfolio-assistant)) |
+| **Assistant** | Ask questions about this project and the rest of my work in the [portfolio assistant](https://karthikeyan-portfolio.streamlit.app) ([code](https://github.com/Karthikeyan314/portfolio-assistant)) |
 
 ## Architecture
 
@@ -141,7 +141,7 @@ GitHub Actions runs lint (Ruff, SQLFluff) and unit tests on every push. It then 
 
 ## Portfolio assistant
 
-This project is one of the sources for my [portfolio assistant](https://huggingface.co/spaces/butterfingers1403/portfolio-assistant), a chatbot that answers questions about my work. It learns from this README, so questions about the pipeline are answered from it and cite it. The code is in [Karthikeyan314/portfolio-assistant](https://github.com/Karthikeyan314/portfolio-assistant).
+This project is one of the sources for my [portfolio assistant](https://karthikeyan-portfolio.streamlit.app), a chatbot that answers questions about my work. It learns from this README, so questions about the pipeline are answered from it and cite it. The code is in [Karthikeyan314/portfolio-assistant](https://github.com/Karthikeyan314/portfolio-assistant).
 
 ## Repository layout
 
